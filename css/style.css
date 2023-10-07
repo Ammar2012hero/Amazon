@@ -1,0 +1,623 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    padding: 0px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar #toggler{
+    display: none;
+}
+
+.navbar .fa-bars{
+    font-size: 25px;
+    color: black;
+    border-radius: 5px;
+    padding: 7px 12px;
+    cursor: pointer;
+    border: 2px solid rgba(0,0,0,0.1);
+    display: none;
+}
+
+.navbar a{
+    font-size: 25px;
+    color: rgb(73,73,73);
+    text-decoration: none;
+}
+
+.navbar a span{
+    color: rgb(255, 247, 0);
+    font-size: 30px;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.navbar ul li a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover{
+    color: rgb(255, 247, 0);
+}
+
+.navbar .icons i{
+    color: black;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.navbar .icons i:hover{
+    color: rgb(255, 247, 0);
+}
+
+.home{
+    background-image: url(../imeges/home1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding-left: 100px;
+    padding-top: 200px;
+}
+
+.home h2{
+    color: black;
+    font-size: 85px;
+    padding-top: 70px;
+}
+
+.home h3{
+    color: rgb(255, 247, 0);
+    font-size: 40px;
+}
+
+.home p{
+    font-size: 16px;
+    color: black;
+}
+
+.home button{
+    background-color: black;
+    color: white;
+    padding: 10px 35px;
+    font-size: 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.home button:hover{
+    background-color: rgb(255, 247, 0);
+}
+
+.about{
+    padding: 50px 0px;
+    width: 80%;
+    margin: auto;
+}
+
+.about h2{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 247, 0);
+    background-color: rgba(255, 247, 0, 0.1);
+    padding: 7px;
+    margin: 10px 0px;
+}
+
+.about h2 span{
+    color: black;
+}
+
+.about .about-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .about-div .imgg, .about .about-div .text{
+    width: 45%;
+}
+
+.about .about-div .imgg img{
+    width: 100%;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 0 8px 16 rgba(0,0,0,0.1);
+}
+
+.about .about-div .imgg{
+    position: relative;
+}
+
+.about .about-div .imgg h3{
+    position: absolute;
+    top: 45%;
+    font-size: 30px;
+    background-color: white;
+    padding: 16px 20px;
+    text-align: center;
+    width: 100%;
+    text-transform: capitalize;
+    mix-blend-mode: screen;
+}
+
+.about .about-div .text h3{
+    font-size: 25px;
+    color: black;
+}
+
+.about .about-div .text p{
+    font-size: 16px;
+    color: black;
+    padding: 15px 25px;
+}
+
+.about .about-div .text button{
+    background-color: black;
+    color: white;
+    padding: 10px 35px;
+    font-size: 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.about .about-div .text button:hover{
+    background-color: rgb(255, 247, 0);
+}
+
+.section3{
+    background-color: #eee;
+    /* height: 300px; */
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section3-content{
+    width: 23%;
+    /* height: 200px; */
+    background-color: white;
+    border: 15px solid rgba(0,0,0,0.1);
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section3-content img{
+    height: 80px;
+    width: 60px;
+    margin-right:30px ;
+}
+
+.section3-content .info{
+    width: 50px;
+}
+
+.section3-content .info h3{
+    color: black;
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
+.product .heading{
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(255, 247, 0, 0.1);
+    color: black;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+
+.product .heading span{
+    color: rgb(255, 247, 0);
+}
+
+.product .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product .box-container .box{
+    width: 32%;
+    border: 8px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.product .box-container .box .discuont{
+    font-size: 42px;
+    color: rgb(255, 247, 0);
+    background-color: rgba(255, 247, 0, 0.1);
+    padding: 80px 15px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+}
+
+.product .box-container .box .images{
+    text-align: center;
+    padding-top: 25px;
+    position: relative;
+}
+
+.product .box-container .box .images img{
+    height: 300px;
+    width: 55%;
+}
+
+.product .box-container .box:hover .images img{
+    transform: scale(1.1);
+}
+
+.product .box-container .box .images .icons{
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    display: flex;
+}
+
+.product .box-container .box:hover .images .icons{
+    visibility: visible;
+}
+
+.product .box-container .box .images .icons a{
+    width: 25%;
+    background-color: rgb(255, 247, 0);
+    color: white;
+    font: 20px;
+    text-decoration: none;
+    padding: 15px 0px;
+}
+
+.product .box-container .box .images .icons .cart{
+    width: 50%;
+    border-left: 15px solid gray;
+    border-right: 15px solid gray;
+}
+
+.product .box-container .box .images .icons a:hover{
+    background-color: black;
+}
+
+.product .box-container .box .images .text{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.product .box-container .box .images .text h2{
+    color: black;
+}
+
+.product .box-container .box .images .text .price{
+    color:  rgb(255, 247, 0);
+    padding-top: 20px;
+}
+
+.product .box-container .box .images .text .price span{
+    color: grey;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.Customer_Review{
+    padding: 58px 0px;
+    width: 80%;
+    margin: auto;
+}
+
+.Customer_Review .hedding{
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(255, 247, 0, 0.1);
+    padding: 7px;
+    margin: 10px 0px;
+}
+
+.Customer_Review .hedding span{
+    color: rgb(255, 247, 0);
+}
+
+.Customer_Review .divs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Customer_Review .divs .div1{
+    width: 32%;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 20px;
+    box-shadow: 0px 15px 15px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.Customer_Review .divs .div1 .iconss i{
+    font-size: 20px;
+}
+
+.Customer_Review .divs .div1 .text p{
+    padding: 20px;
+    color: #999;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.Customer_Review .divs .div1 .imges{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Customer_Review .divs .div1 .imges img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.Customer_Review .divs .div1 .imges .imges-info{
+    margin-left: 10px;
+}
+
+.Customer_Review .divs .div1 .imges .imges-info h2{
+    color: black;
+    font-size: 20px;
+}
+
+.Customer_Review .divs .div1 .imges .imges-info h3{
+    font-size: 17px;
+    color: #999;
+}
+
+.Customer_Review .divs .div1 .big_icon i{
+    font-size: 50px;
+    color: #eee;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.contact{
+    padding: 50px 0px;
+    width: 80%;
+    margin: auto;
+}
+
+.contact .hedding{
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(255, 247, 0, 0.1);
+    color: rgb(255, 247, 0);
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+
+.contact .hedding span{
+    color: black;
+}
+
+.contact .contact-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .contact-info form{
+    width: 48%;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 20px 25px;
+}
+
+.contact .contact-info form .box{
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin: 8px 0px;
+    width: 100%;
+}
+
+.contact .contact-info form .box:focus{
+    border: 1px solid rgba(255, 247, 0);     
+    outline: rgb(255, 247, 0);
+}
+
+.contact .contact-info form textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.contact .contact-info .img-div{
+    width: 48%;
+} 
+
+.contact .contact-info .img-div img{
+    width: 100%;
+}
+
+.contact .contact-info form .btn{
+background-color: black;
+color: white;
+padding: 10px 30px;
+font-size: 20px;
+margin-top: 15px;
+border: none;
+border-radius: 40px;
+cursor: pointer;
+}
+
+.contact .contact-info form .btn:hover{
+background-color: rgb(255, 247, 0);
+}
+
+.last{
+    width: 80%;
+    padding: 50px 0px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+
+.last .last-info{
+    width: 25%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.last .last-info h2{
+    color: black;
+    font-size: 25px;
+    padding: 10px 0px;
+    text-transform: capitalize;
+}
+
+.last .last-info a{
+   text-decoration: none;
+   color: black;
+   margin-top: 20px;
+   display: block;
+   color: #999;
+}
+
+.last .last-info ul li{
+    list-style: none;
+}
+
+.last .last-info ul li a:hover{
+    text-decoration: underline;
+    color: rgb(255, 247, 0);
+}
+
+.last .last-info .last-img img{
+    margin-top: 10px;
+}
+
+.last_thing{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    border-top: 2px solid rgba(0,0,0,0.1);
+    width: 80%;
+    margin: auto;
+    padding: 15px 0px;
+}
+
+.last_thing span{
+    color: rgb(255, 247, 0);
+}
+
+@media (max-width:992px){
+    .about .about-div .img-div, .about .about-div .text{
+        width: 100%;
+    }
+
+    .section3{
+        padding: 30px 20px;
+    }
+
+    .product .box-container .box{
+        width: 49%;
+    }
+}
+
+@media (max-width:768px){
+    .home{
+        padding-left: 10px;
+    }
+
+    .section3 .section3-content{
+        width: 48%;
+    }
+
+    .navbar .fa-bars{
+        display: block;
+    }
+
+    .navbar ul{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #eee;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: block;
+    }
+
+    .navbar ul a{
+        margin: 10px;
+        padding: 10px;
+        display: block;
+        background-color: white;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+}
+
+@media (max-width:567px){
+    .home{
+        padding-left: 10px;
+    }
+
+    .home h2{
+        font-size: 50px;
+    }
+
+    .product .box-container .box{
+        width: 100%;
+    }
+
+    .Customer_Review .divs .div1{
+        width: 100%;
+    }
+
+    .contact .contact-info form{
+        width: 100%;
+        order: 2;
+    }
+
+    .contact .contact-info .img-div{
+        width: 100%;
+        order: 1;
+    }
+}
+
+
+
+
+
+                            /* happy ending */
